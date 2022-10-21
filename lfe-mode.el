@@ -38,6 +38,8 @@
     ;; Like scheme we allow [ ... ] as alternate parentheses.
     (modify-syntax-entry ?\[ "(]  " table)
     (modify-syntax-entry ?\] ")[  " table)
+    ;; ":" character should be used as punctuation to separate symbols
+    (modify-syntax-entry ?: "." table)
     table)
   "Syntax table in use in Lisp Flavoured Erlang mode buffers.")
 
